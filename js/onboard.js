@@ -6,13 +6,13 @@ jQuery(function($) {
 
 // my functions
 function checksubmit(){
-    alert('Your Submission Received: Congratulations, you are now signed up for our newsletter!');
+    alert('Congratulations, you are now signed up for our newsletter!');
     
-    // disable submit button;
+    // after alert disable submit button;
     var submitbutton = document.getElementById("submit");
     submitbutton.style.opacity = 0.2;
-    submitbutton.style.backgroundColor = lightgrey;
+    submitbutton.style.backgroundColor = yellow;
 };
 
-document.getElementById("Test1").addEventListener('submit', checksubmit);
+document.getElementById("myform").addEventListener('submit', checksubmit);
 
