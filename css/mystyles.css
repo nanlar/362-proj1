@@ -1,0 +1,145 @@
+/* Nilufer Anlar, mystyles.css */
+
+/* 
+   I used Modular Scale Minor 3rd, 120% in the Math calculations below.
+   I assumed browser defult font size of 16px.
+*/
+
+/* ===== BASE STYLES ===== */
+
+/* for Responsive Media */
+img, audio, video {
+  display: block;
+  max-width: 100%;
+}
+
+
+html {
+  font-size: 1.375em;  /* 16px */
+  line-height: 1.2em;  /* 19.2px / ~ 120% */
+  padding: 1.2em;  /* 19.2px / ~ 120% */
+  text-rendering: optimizeLegibility;
+}
+
+/* setup "font-family" of Sans-Serif */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: LightGray;
+}
+
+label, input {
+  display: block;
+}
+
+/* ===== LAYOUT STYLES ====== */
+
+h1 {
+  font-size: 1.5em;  /* 24px, (24px/16px=1.5em) */
+  line-height: 1.81em;  /* 120% at ~29px, (29px/16px=1.81em) */
+}
+
+p {
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.18em;  /* 120% at ~19px, (19px/16px=1.188em)*/
+  padding-bottom: 1.18em;  /* 120% at ~19px, (19px/16px=1.188em) */
+}
+
+ol {
+  background-color: Silver;
+  margin-top: 0.5em;  /* 8px, (8px/16px=0.5em) */
+  padding-left: 0.5em;  /* 8px, (8px/16px=0.5em) */
+  padding-right: 0.5em;  /* 8px, (8px/16px=0.5em) */
+  padding-top: 0.5em;  /* 8px, (8px/16px=0.5em) */
+  padding-bottom: 0.5em;   /* 8px, (8px/16px=0.5em) */
+}
+
+input {
+  border-style: none;
+  display: inline-block;
+  margin-bottom: 1em;  /* 16px/16px */
+  padding-left: 0.2em;  /* just some space before typing */
+}
+
+#input-email {
+  border-style: none;
+}
+
+#email {
+  border-style: none;
+  background-color: Gainsboro;
+}
+
+[type=checkbox] {
+  float: left;
+  border-style: none;
+}
+
+#input-age-verification {
+  border-style: none;
+  padding-bottom: 1em;  /* 16px, (16px/16px=1em) */
+}
+
+label[for=age-verification] {
+  font-size: 0.75em;  /* 12px, (12px/16px=.75em) */
+  border-style: none;
+  padding-left: 1em;  /* 16px, (16px/16px=1em) */
+}
+
+#age-verification {
+  border-style: none;
+  display: inline;
+  width: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0.25em;  /* 4px, (4px/16px=0.25em), just some space */
+  width: 1em;  /* 16px, (16px/16px=1em) */
+  height: 1em;  /* 16px, (16px/16px=1em) */
+}
+
+#submit {
+  border-style: none;
+  width: 100%;
+  margin-top: 0.5em;  /* 8px, (8px/16px=0.5em) */
+  margin-bottom: 0.5em;  /* 8px, (8px/16px=0.5em) */
+  padding-top: 0.5em;  /* 8px, (8px/16px=0.5em) */
+  padding-bottom: 0.5em;  /* 8px, (8px/16px=0.5em) */
+  background-color: #606060;
+  color: white;
+}
+
+/* ===== MODULAR STYLES ===== */
+
+/* My two media queries are listed below */
+
+/* for tablets */
+@media screen and (min-width: 768px) {  
+  h1 {
+    font-size: 2em;  /* 32px, (32px/16px=2em) for bigger screens */
+  }
+  
+  #input-submit {
+    text-align: center;
+  }
+  
+  #submit {
+    width: 90%;
+    color: white;
+    background-color: Gray;
+  }
+} 
+
+/* for desktops and wide screens */
+@media screen and (min-width: 992px) {
+  #input-submit {
+    text-align: center;
+  }
+  
+  #submit {
+    width: 30%;
+    color: white;
+    background-color: #505050; 
+  }
+} 
+
+/* ====== end of mystyles.css ======= */
