@@ -41,19 +41,20 @@ p {
 
 label {
   display: block;
+  font-Size: 0.75em;  /* at 12px (12px/16px=0.75em) */
 }
 
 #wrap-inputs {
   background-color: beige;
-  padding: 12px 8px;  /* NHA */
+  padding: 8px 8px 8px 8px;  /* top right bottom left*/
 }
 
 input {
-  /* width: 100%; */
+  width: 100%; /* mobile friendly */
   border-style: none;
-  padding: 4px 4px;  /* NHA */
-  margin: 8px 0;  /* NHA */
-}
+  padding: 4px 0 4px 4px;  /* top right bottom left */
+  margin: 8px 0 12px 0;
+} 
 
 #input-email, #email {
   border-style: none;
@@ -63,16 +64,11 @@ input {
   font-size: 0.625em;  /* at 10px, (10px/16px=0.625em) */
 }
 
-#input-age-verification {
-  display: inline-block;  /* NHA */
-  border-style: none;
-  padding-bottom: 1em;   /* 16px, (16px/16px=1em) */
-}
-
 label[for=age-verification] {
   font-size: 0.75em;
   border-style: none;
-  padding: 0 0; 
+  float: left;
+  margin: 8px 8px 0 0; /* now */
 }
 
 #age-verification {
@@ -84,7 +80,7 @@ label[for=age-verification] {
 }
 
 #inp-submit {
- margin: 0.5em 0 0 0;
+ margin: 0.8em 0 0 0;
 }
 
 #submit {
@@ -93,7 +89,7 @@ label[for=age-verification] {
   font-weight: 700;  /* for bold effect */
   border-style: none;
   margin: 0;
-  padding: 0.25em 0;  /* 4px, (4px/16px=0.25em) */
+  padding: 0.5em 0;  /* 8px, (8px/16px=0.5em) */
   background-color: lightgray;
   color: red;
 }
@@ -117,6 +113,12 @@ label[for=age-verification] {
   input {
     width: 60%;
   }
+  
+  label[for=age-verification] {
+  font-size: 0.75em;
+  float: none;
+  margin: 8px 8px 0 0; /* now */
+}
   
   #submit {
     width: 60%;
@@ -146,13 +148,7 @@ label[for=age-verification] {
 /* ===== STATE STYLES ======= */
 /* === for javascript === */
 
-#submit:not(.active):hover{ /* before submit */
-    background-color: gray;
-}
-
-#submit.submitted:hover { /* after submit (greyed out */
-    /* does not change color */
-}
+/* not sure what to add here yet */
  
 
 /* ====== end of mystyles.css ======= */
