@@ -6,15 +6,38 @@ jQuery(function($) {
 
 // my functions
 function checksubmit(){
+  if (checkmail())
+  {
     alert('Congratulations, you are now signed up for our newsletter!');
-    
-    // after alert disable submit button;
-    var submitbutton = document.getElementById("submit");
-    submitbutton.style.opacity = 0.2;
-    submitbutton.style.backgroundColor = yellow;
+  }
 };
 
 document.getElementById("myform").addEventListener('submit', checksubmit);
+
+
+// check the email address against a regular expression
+function checkmail() {
+  var emailbutton = document.getElementById("email");
+  var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(emailbutton.value.match(emailformat))
+  {
+    return true;
+  }
+  else
+  {
+    // if your entry is not in the emailformat defined above"
+    alert("Please enter a valid e-mail address");
+    // NHA - form clears once pressed ok
+    //document.myform.email.focus();
+    return false;
+  }
+}
+  
+
+
+
+
+
 
 
 

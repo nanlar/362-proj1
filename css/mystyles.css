@@ -141,6 +141,20 @@ label[for=age-verification] {
     color: white;
     background-color: blue; 
   }
-} 
+}
+  
+/* ===== STATE STYLES ======= */
+/* === for javascript === */
+
+#submit:not(.active):hover{ /* before submit */
+    background-color: gray;
+}
+
+#submit.submitted:hover { /* after submit (greyed out */
+    /* does not change color */
+}
+ 
 
 /* ====== end of mystyles.css ======= */
+
+
