@@ -16,7 +16,7 @@ html {
 
 /* setup "font-family" of Sans-Serif */
 body {
-  font-family: Verdana, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: skyblue;
 }
 
@@ -55,16 +55,16 @@ input {
   margin: 8px 0;  /* NHA */
 }
 
-#input-email {
+#input-email, #email {
   border-style: none;
 }
 
-#email {
-  border-style: none;
-  /* background-color: Gainsboro; */
+#em-disclaimer {
+  font-size: 0.625em;  /* at 10px, (10px/16px=0.625em) */
 }
 
 #input-age-verification {
+  display: inline-block;  /* NHA */
   border-style: none;
   padding-bottom: 1em;   /* 16px, (16px/16px=1em) */
 }

@@ -12,13 +12,18 @@
 </head>
 
 <body>
+  <header id="page-header">
+    <h1>Chicago Numerology Society</h1>
+    <img src="media/chicago.png" alt="Chicago">
+    <img src="media/bnumbers.png" alt="Numbers">
+  </header>
+  
 <main id="content">
+  <h2>Welcome to our society, we love numbers!</h2>
+  <p>Through monthly meetups, wokshops and social outings, everyone helps each other to grow in the amazing life-changing knowledge Numerology provides. Connect with us and join in on the action! As a welcome gift, we will email you our "2019 Numerology Analysis"(it is a number 3 year!).</p>
+  
   <form id="myform" method="get" action="#null">
-    <h1>Get Our Newsletter</h1>
-    <p>
-      Sign up to be first to receive the latest news
-      and breaking alerts right in your inbox.
-    </p>
+    <h2>Sign up to receive our newsletter for the latest news.</h2>
     <div id=wrap-inputs>
       <div id="first-name">
         <label for="first-name">First Name</label>
@@ -32,19 +37,24 @@
         <label for="email">Email</label>
         <input type="email" name="email" id="email" pattern="^.+@.+$" required />
       </div>
+      <div id="em-disclaimer">
+          <p>Your email will never be shared or sold and you can easily unsubscribe at any time.</p>
+      </div>
       <div>
         <input type="checkbox" id="age-verification" name="age-verification" value="18" required />
         <label for="age-verification">I am 18 years of age or older</label>
       </div>
       <div id="inp-submit">
-        <input type="submit" name="submit" id="submit" value="Subscribe Now" />
+        <input type="submit" name="submit" id="submit" value="Sign Me Up" />
       </div>
     </div>
-    
+  
     <div id="hidden">
       <input type="hidden" id="postId" name="postId" value="nanlar">
     </div>
   </form>
+  
+  
 </main>
   
 </body>
