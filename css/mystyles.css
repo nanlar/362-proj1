@@ -66,7 +66,7 @@ input {
 
 #input-age-verification {
   border-style: none;
-  padding-bottom: 1em;  /* 16px, (16px/16px=1em) */
+  padding-bottom: 1em;   /* 16px, (16px/16px=1em) */
 }
 
 label[for=age-verification] {
@@ -78,9 +78,13 @@ label[for=age-verification] {
 #age-verification {
   border-style: none;
   width: auto;
-  margin: 0 0;
+  margin: 4px 0;
   width: 1em;  /* 16px, (16px/16px=1em) */
   height: 1em;  /* 16px, (16px/16px=1em) */
+}
+
+#inp-submit {
+ margin: 0.5em 0 0 0;
 }
 
 #submit {
