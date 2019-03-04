@@ -7,28 +7,27 @@
 
 /* ===== BASE STYLES ===== */
 
-/* for Responsive Media */
-img, audio, video {
-  display: block;
-  max-width: 100%;
-}
-
-
 html {
-  font-size: 1.375em;  /* 16px */
-  line-height: 1.2em;  /* 19.2px / ~ 120% */
-  padding: 1.2em;  /* 19.2px / ~ 120% */
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
+  padding: 1.2em;  /* 120% */
   text-rendering: optimizeLegibility;
 }
 
 /* setup "font-family" of Sans-Serif */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: LightGray;
+  font-family: Verdana, Arial, sans-serif;
+  background-color: skyblue;
 }
 
 label, input {
   display: block;
+}
+
+/* for Responsive Media */
+img, audio, video {
+  display: block;
+  max-width: 100%;
 }
 
 /* ===== LAYOUT STYLES ====== */
@@ -44,8 +43,8 @@ p {
   padding-bottom: 1.18em;  /* 120% at ~19px, (19px/16px=1.188em) */
 }
 
-ol {
-  background-color: Silver;
+#wrap-inputs {
+  background-color: beige;
   margin-top: 0.5em;  /* 8px, (8px/16px=0.5em) */
   padding-left: 0.5em;  /* 8px, (8px/16px=0.5em) */
   padding-right: 0.5em;  /* 8px, (8px/16px=0.5em) */
@@ -115,10 +114,6 @@ label[for=age-verification] {
 /* for tablets  768 */
 /* for small devices 480 */
 @media screen and (min-width: 480px) {  
-  h1 {
-    font-size: 2em;  /* 32px, (32px/16px=2em) for bigger screens */
-  }
-  
   #wrap-inputs {
     text-align: center;
     margin: auto;
@@ -145,13 +140,12 @@ label[for=age-verification] {
   #wrap-inputs {
     width: 600px;
     float: right;
-    text-align: center; /* needed?? */
   }
   
   #submit {
     width: 30%;
     color: white;
-    background-color: #505050; 
+    background-color: blue; 
   }
 } 
 
