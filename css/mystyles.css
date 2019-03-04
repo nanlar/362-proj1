@@ -72,16 +72,13 @@ input {
 label[for=age-verification] {
   font-size: 0.75em;
   border-style: none;
-  padding-left: 0.25em;  NHA 16px, (16px/16px=1em) */
+  padding: 0 0; 
 }
 
 #age-verification {
   border-style: none;
-  width: 100%;  /* NHA auto */
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  /* margin-right: 0.25em;   NHA 4px, (4px/16px=0.25em), just some space */
+  width: auto;
+  margin: 0 0;
   width: 1em;  /* 16px, (16px/16px=1em) */
   height: 1em;  /* 16px, (16px/16px=1em) */
 }
