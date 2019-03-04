@@ -19,24 +19,25 @@
       Sign up to be first to receive the latest news
       and breaking alerts right in your inbox.
     </p>
-    <ol>
-      <li id="input-name">
+    <div id=cont-inputs>
+      <div id="input-name">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" />
-      </li>
-      <li id="input-email">
+      </div>
+      <div id="input-email">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" pattern="^.+@.+$" required />
-      </li>
-      <li id="input-age-verification">
+      </div>
+      <div id="input-age-verification">
         <input type="checkbox" id="age-verification" name="age-verification" value="18" required />
         <label for="age-verification">I am 18 years of age or older</label>
-      </li>
-      <li id="input-submit">
+      </div>
+      <div id="submit">
         <input type="submit" name="submit" id="submit" value="Subscribe Now" />
-      </li>
-    </ol>
-    <div>
+      </div>
+    </div>
+    
+    <div id="hidden">
       <input type="hidden" id="postId" name="postId" value="nanlar">
     </div>
   </form>

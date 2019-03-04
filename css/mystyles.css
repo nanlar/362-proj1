@@ -112,27 +112,40 @@ label[for=age-verification] {
 
 /* My two media queries are listed below */
 
-/* for tablets */
-@media screen and (min-width: 768px) {  
+/* for tablets  768 */
+/* for small devices 480 */
+@media screen and (min-width: 480px) {  
   h1 {
     font-size: 2em;  /* 32px, (32px/16px=2em) for bigger screens */
   }
   
-  #input-submit {
+  #wrap-inputs {
     text-align: center;
+    margin: auto;
+  }
+  
+  label {
+    font-size: 1.2em;
+  }
+  
+  input {
+    width: 60%;
   }
   
   #submit {
-    width: 90%;
-    color: white;
-    background-color: Gray;
+    width: 35%;
+    display: block;
+    margin: auto;
+    font-size: 0.8em;
   }
 } 
 
 /* for desktops and wide screens */
 @media screen and (min-width: 992px) {
-  #input-submit {
-    text-align: center;
+  #wrap-inputs {
+    width: 600px;
+    float: right;
+    text-align: center; /* needed?? */
   }
   
   #submit {
