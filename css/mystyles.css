@@ -37,7 +37,7 @@ h2 {
   font-size: 1em;  /* 16px, (16px/16px=1em) */
   line-height: 1.25em;  /* ~120% at ~20px, (20px/16px=1.125em) */
   font-weight: 700;  /* for bold */
-  margin: 0.5em 0 0.5em 0;  
+  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
 }
 
 p {
@@ -81,13 +81,13 @@ label[for=age-verification] {
   font-size: 0.75em;
   border-style: none;
   float: left;
-  margin: 8px 8px 0 0; /* now */
+  margin: 0.5em 0.5em 0 0; /* 8px is 0.5em */
 }
 
 #age-verification {
   border-style: none;
   width: auto;
-  margin: 4px 0;
+  margin: 0.25em 0;  / 4px, (4px/16px=0.25em) */
   width: 1em;  /* 16px, (16px/16px=1em) */
   height: 1em;  /* 16px, (16px/16px=1em) */
 }
@@ -104,15 +104,20 @@ label[for=age-verification] {
   margin: 0;
   padding: 0.5em 0;  /* 8px, (8px/16px=0.5em) */
   background-color: darkgray;  /* NOW */
-  color: crimson;  /* NOW */
+  color: white;  /* NOW */
+}
+
+iframe {
+    border: 1px solid black;
+    width: 150px;
+    height: 100px;
 }
 
 /* ===== MODULAR STYLES ===== */
 
 /* My two media queries are listed below */
 
-/* for tablets  768 */
-/* for small devices 480 */
+/* for small devices and above*/
 @media screen and (min-width: 480px) {  
   #wrap-inputs {
     text-align: center;
@@ -141,6 +146,12 @@ label[for=age-verification] {
     font-size: 1.2em;
     background-color: green;
   }
+  
+  iframe {
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+  }
 } 
 
 /* for desktops and wide screens */
@@ -158,11 +169,7 @@ label[for=age-verification] {
   }
 }
 
-iframe {
-    border: 1px solid black;
-    width: 300px;
-    height: 200px;
-}
+
   
 /* ===== STATE STYLES ======= */
 /* === for javascript === */
