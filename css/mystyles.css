@@ -157,6 +157,12 @@ label[for=age-verification] {
     background-color: blue; 
   }
 }
+
+iframe {
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+}
   
 /* ===== STATE STYLES ======= */
 /* === for javascript === */

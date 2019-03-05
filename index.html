@@ -22,49 +22,53 @@
     <img src="media/bnumbers.png" alt="Numbers">
   </header>
   
-<main id="content">
-  <h2>Welcome to our society, we love numbers!</h2>
-  <p>Numerology reveals the meaning of numbers behind birthdays, names, places and much more. Through monthly meetups, wokshops and social outings, we explore the amazing knowledge Numerology provides. Connect with us and join in on the action! 
-  </p>
-  <div id="gift">
+  <main id="content">
+    <h2>Welcome to our society, we love numbers!</h2>
+    <p>Numerology reveals the meaning of numbers behind birthdays, names, places and much more. Through monthly meetups, wokshops and social outings, we explore the amazing knowledge Numerology provides. Connect with us and join in on the action! 
+    </p>
+    <div id="gift">
       <p>As a welcome gift, we will email you our "2019 Numerology Analysis"(it is a number 3 year!).</p>
     </div> 
   
-  <form id="myform" method="get" action="#null">
-    <h2>Sign up to our email list to get the latest news.</h2>
-     
-    <div id=wrap-inputs>
-      <div id="first-name">
-        <label for="first-name">First Name</label>
-        <input type="text" name="fname" id="fname" required />        
-      </div>
-      <div id="last-lname">
-        <label for="last-name">Last Name</label>
-        <input type="text" name="lname" id="lname" />        
-      </div>
-      <div id="input-email">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" pattern="^.+@.+$" required />
-      </div>
-      <div id="em-disclaimer">
+    <form id="myform" method="get" action="#null">
+      <h2>Sign up to our email list to get the latest news.</h2>   
+      <div id=wrap-inputs>
+        <div id="first-name">
+          <label for="first-name">First Name</label>
+          <input type="text" name="fname" id="fname" required />        
+        </div>
+        <div id="last-lname">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="lname" id="lname" />        
+        </div>
+        <div id="input-email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" pattern="^.+@.+$" required />
+        </div>
+        <div id="em-disclaimer">
           <p>Your email will never be shared or sold and you can easily unsubscribe at any time.</p>
+        </div>
+        <div>
+          <input type="checkbox" id="age-verification" name="age-verification" value="18" required />
+          <label for="age-verification">I am 18 years of age or older</label>
+        </div>
+        <div id="inp-submit">
+          <input type="submit" name="submit" id="submit" value="Sign Me Up" />
+        </div>
       </div>
-      <div>
-        <input type="checkbox" id="age-verification" name="age-verification" value="18" required />
-        <label for="age-verification">I am 18 years of age or older</label>
+  
+      <div id="hidden">
+        <input type="hidden" id="postId" name="postId" value="nanlar">
       </div>
-      <div id="inp-submit">
-        <input type="submit" name="submit" id="submit" value="Sign Me Up" />
-      </div>
+    </form>
+    <div id="history">
+      <p>History of Numerology goes back to ancient times. Here is a brief introduction: </p>
+      <iframe id="history" title="History of Numerology" src="https://www.youtube.com/embed/s2-hEdJKO1k" allowfullscreen></iframe>" </iframe>
     </div>
-  
-    <div id="hidden">
-      <input type="hidden" id="postId" name="postId" value="nanlar">
-    </div>
-  </form>
-  
-  
-</main>
+  </main>
+  <footer>
+    <p>Contact information: <a href="mailto:nanlar@hawk.iit.edu">Nelly Anlar</a>.</p>
+  </footer>
   
 </body>
 
