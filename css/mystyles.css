@@ -70,12 +70,10 @@ input {
   margin: 8px 0 12px 0;
 } 
 
-#input-email, #email {
-  border-style: none;
-}
-
 #em-disclaimer {
   font-size: 0.625em;  /* at 10px, (10px/16px=0.625em) */
+  line-height: 0.625em; /* now */
+  color: green;
 }
 
 label[for=age-verification] {
