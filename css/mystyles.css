@@ -34,17 +34,16 @@ h1 {
 }
 
 h2 {
-  font-size: 1.125em;  /* 18px, (18px/16px=1.125em) */
-  line-height: 1.375em;  /* 120% at ~22px, (22px/16px=1.375em) */
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.25em;  /* ~120% at ~20px, (20px/16px=1.125em) */
   font-weight: 700;  /* for bold */
-  margin-bottom: 0;
+  margin: 0.5em 0 0.5em 0;  
 }
 
 p {
-  font: Helvetica;
   font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;  /* 120% at ~20px, (20px/16px=1.2em)*/
-  padding: 0.5em 0 0.5em 0;  /* 120% at ~19px, (19px/16px=1.188em) */
+  line-height: 1.2em;  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
+  padding: 0.2em 0 0.2em 0;  /* at ~4px */
 }
 
 #gift {
