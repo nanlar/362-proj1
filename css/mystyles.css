@@ -41,9 +41,10 @@ h2 {
 }
 
 p {
+  font: Helvetica;
   font-size: 1em;  /* 16px, (16px/16px=1em) */
   line-height: 1.18em;  /* 120% at ~19px, (19px/16px=1.188em)*/
-  padding: 1.18em 0 1.18em 0;  /* 120% at ~19px, (19px/16px=1.188em) */
+  padding: 1em 0 1em 0;  /* 120% at ~19px, (19px/16px=1.188em) */
 }
 
 label {
