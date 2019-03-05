@@ -16,7 +16,7 @@ html {
 /* setup "font-family" of Sans-Serif */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: skyblue;
+  background-color: lavender;
 }
 
 /* for Responsive Media */
@@ -49,7 +49,7 @@ p {
 #gift {
   font-size: 1em;
   font-style: oblique;
-  color: red;
+  color: crimson;
   margin-top: 0;
 }
 
@@ -59,7 +59,7 @@ label {
 }
 
 #wrap-inputs {
-  background-color: beige;
+  background-color: Gainsboro; 
   padding: 8px 8px 8px 8px;  /* top right bottom left*/
 }
 
@@ -74,6 +74,7 @@ input {
   font-size: 0.625em;  /* at 10px, (10px/16px=0.625em) */
   line-height: 0.625em; /* now */
   color: green;
+  font-style: oblique;
 }
 
 label[for=age-verification] {
@@ -102,8 +103,8 @@ label[for=age-verification] {
   border-style: none;
   margin: 0;
   padding: 0.5em 0;  /* 8px, (8px/16px=0.5em) */
-  background-color: lightgray;
-  color: red;
+  background-color: darkgray;  /* NOW */
+  color: crimson;  /* NOW */
 }
 
 /* ===== MODULAR STYLES ===== */
