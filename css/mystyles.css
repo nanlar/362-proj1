@@ -69,7 +69,7 @@ label {
 
 #myform {
   background-color: lightblue; 
-  padding: 10px 10px 10px 10px;  /* top right bottom left*/
+  padding: 8px 8px 8px 8px;  /* top right bottom left*/
   /* margin: 8px 0 8px 0  now */
 }
 
@@ -94,14 +94,6 @@ label[for=age-verification] {
   border-style: none;
   float: left;
   margin: 0.5em 0.5em 0 0; /* 8px is 0.5em */
-}
-
-#age-verification {
-  border-style: none;
-  width: auto;
-  margin-top: 0.5em;  /* now 4px, (4px/16px=0.25em) */
-  width: 1em;  /* 16px, (16px/16px=1em) */
-  height: 1em;  /* 16px, (16px/16px=1em) */
 }
 
 #submit {
@@ -141,7 +133,7 @@ iframe {
   font-size: 0.75em;  /* at 12px */
   text-align: center;
   margin: 1em 0;  /* now */
-  padding: 0.5em 0;   /* 8px */
+  padding: 0.25em 0;   /* 8px */
 }
 
 /* ===== MODULAR STYLES ================= */
@@ -151,12 +143,12 @@ iframe {
 /* for tablets */
 @media screen and (min-width: 768px) { 
   h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
   }
   
   h2 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-align: center;
   }
   
@@ -180,6 +172,7 @@ iframe {
   }
   
   #addinfo {
+    float: left;
     width: 30%;
   }  
    
@@ -189,7 +182,7 @@ iframe {
   
   #submit {
     width: 50%;
-    font-size: 1.5em; /* NHA */
+    font-size: 1.25em; /* NHA */
     line-height: 2em; /* NHA */
     margin-top: 1em;
     margin-bottom: 0.5em;
@@ -205,20 +198,20 @@ iframe {
   }
   
   footer {
-    clear: right;
+    clear: left;
   }
 } 
 
 /* for desktops and wide screens */
 @media screen and (min-width: 992px) {
+  h2 {
+    text-align: left;
+  }
+  
   #content {
     float: left;
     width: 60%;
     margin: 0 20px;  /* top-bottom, right-left */
-  }
-  
-  h2 {
-    text-align: left;
   }
   
   #addinfo {
@@ -229,8 +222,6 @@ iframe {
   
   #submit {
     width: 60%;
-    font-size: 1.5em; /* NHA */
-    line-height: 2em; /* NHA */
     margin-top: 1em;
     margin-bottom: 0.5em;
     padding: 0;
