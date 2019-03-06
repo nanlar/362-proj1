@@ -98,10 +98,6 @@ label[for=age-verification] {
   height: 1em;  /* 16px, (16px/16px=1em) */
 }
 
-#inp-submit {
- margin: 0.8em 0 0 0;
-}
-
 #submit {
   width: 100%;
   font-size: 1em;
@@ -111,6 +107,14 @@ label[for=age-verification] {
   padding: 0.5em 0;  /* 8px, (8px/16px=0.5em) */
   background-color: darkgray;  /* NOW */
   color: white;  /* NOW */
+}
+
+#nums, #numbers {
+  text-align: center;
+}
+
+#hist {
+  text-align: center;
 }
 
 iframe {
@@ -176,13 +180,13 @@ iframe {
   #content {
     float: left;
     width: 60%;
-    margin: 20px 20px 20px 20px;
+    margin: 0 20px;  /* top-bottom, right-left */
   }
   
   #addinfo {
     float: left;
     width: 40%;
-    margin: 20px 0 20px 0;
+    margin: 0 0 0 0;  /* top right bottom left */
   }  
   
   #submit {
