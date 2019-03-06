@@ -15,7 +15,7 @@ html {
 
 /* setup "font-family" of Sans-Serif */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Georgia, Serif;
   background-color: lavender;
 }
 
@@ -46,6 +46,7 @@ h3 {
 }
 
 p {
+  font-family: "Times New Roman";
   font-size: 1em;  /* 16px, (16px/16px=1em) */
   line-height: 1.2em;  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
   padding: 0.2em 0 0.2em 0;  /* at ~4px */
@@ -119,14 +120,15 @@ iframe {
 
 footer {
   font-size: 0.75em;  /* at 12px */
+  text-align: center;
 }
 
 /* ===== MODULAR STYLES ================= */
 
 /* My MEDIA queries are listed below */
 
-/* for small devices and above*/
-@media screen and (min-width: 480px) {  
+/* for tablets */
+@media screen and (min-width: 768px) {  
   #wrap-inputs {
     text-align: center;
     margin: auto;
@@ -166,21 +168,6 @@ footer {
     text-align: center;
   }
 } 
-
-/* for tablets */
-@media screen and (min-width: 768px) {
-  #wrap-inputs {
-    width: 400px;
-    float: right;
-  }
-  
-  #submit {
-    margin: auto;
-    padding: 0;
-    color: white;
-    background-color: green; 
-  }
-}
 
 /* for desktops and wide screens */
 @media screen and (min-width: 992px) {
