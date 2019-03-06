@@ -118,7 +118,9 @@ iframe {
   border: 1px solid black;
 }
 
-footer {
+#footer {
+  width: 100%;
+  background-color: gray;
   font-size: 0.75em;  /* at 12px */
   text-align: center;
 }
