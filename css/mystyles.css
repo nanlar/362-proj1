@@ -75,7 +75,7 @@ input {
   border-style: none;
   padding: 10px 0 10px 0px;  /* now top right bottom left */
   margin-top: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   display: inline-block;
 } 
 
@@ -96,19 +96,20 @@ label[for=age-verification] {
 #age-verification {
   border-style: none;
   width: auto;
-  margin: 0.25em 0;  /* 4px, (4px/16px=0.25em) */
+  margin-top: 0.5em;  /* now 4px, (4px/16px=0.25em) */
   width: 1em;  /* 16px, (16px/16px=1em) */
   height: 1em;  /* 16px, (16px/16px=1em) */
 }
 
 #submit {
   width: 100%;
-  font-size: 1em;
+  font-size: 1em;  /* 16px/16px=1em */
   font-weight: 700;  /* for bold effect */
   border-style: none;
-  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 0.5em;  /* 8px */
   padding: 0.5em 0;  /* 8px, (8px/16px=0.5em) */
-  background-color: darkgray;  /* NOW */
+  background-color: gray;
   color: white;
 }
 
@@ -147,33 +148,23 @@ iframe {
 /* for tablets */
 @media screen and (min-width: 768px) { 
   h1 {
+    font-size: 2em;
     text-align: center;
-  }
- 
-  #wrap-inputs {
-    text-align: center;
-    margin: auto;
   }
   
   label {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   
   input {
     width: 100%;
   }
-  
-  label[for=age-verification] {
-  font-size: 0.75em;
-  float: none;
-  margin: 8px 8px 0 0; /* now */
-}
-  
+   
   #submit {
     width: 60%;
     display: block;
     margin: auto;
-    padding: 0;
+    padding: 1em;
     font-size: 1.5em;
     background-color: gray;
   }
@@ -207,7 +198,8 @@ iframe {
   #submit {
     font-size: 1.5em; /* NHA */
     line-height: 2em; /* NHA */
-    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
     padding: 0;
     color: white;
     background-color: blue; /* NHA */
