@@ -55,6 +55,7 @@ p {
 #gift {
   font-size: 1em;
   font-style: oblique;
+  font-weight: 700;  /* for bold effect */
   color: crimson;
   margin-top: 0;
 }
@@ -106,7 +107,7 @@ label[for=age-verification] {
   margin: 0;
   padding: 0.5em 0;  /* 8px, (8px/16px=0.5em) */
   background-color: darkgray;  /* NOW */
-  color: white;  /* NOW */
+  color: white;
 }
 
 #nums, #numbers {
@@ -140,7 +141,11 @@ iframe {
 /* My MEDIA queries are listed below */
 
 /* for tablets */
-@media screen and (min-width: 768px) {  
+@media screen and (min-width: 768px) { 
+  h1 {
+    text-align: center;
+  }
+ 
   #wrap-inputs {
     text-align: center;
     margin: auto;
