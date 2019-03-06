@@ -113,9 +113,8 @@ label[for=age-verification] {
 }
 
 iframe {
+  position: relative;
   border: 1px solid black;
-  width: 150px;
-  height: 100px;
 }
 
 footer {
