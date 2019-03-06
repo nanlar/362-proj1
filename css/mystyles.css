@@ -160,13 +160,31 @@ iframe {
     width: 100%;
   }
    
-  #submit {
+  #content {
+    float: right;
     width: 60%;
-    display: block;
-    margin: auto;
-    padding: 1em;
-    font-size: 1.5em;
-    background-color: gray;
+    margin: 0 20px;  /* top-bottom, right-left */
+  }
+  
+  #addinfo {
+    float: right;
+    width: 40%;
+    margin: 0 0 0 0;  /* top right bottom left */
+  }  
+   
+  #input-submit {
+    text-align: center;
+  }
+  
+  #submit {
+    width: 50%;
+    font-size: 1.5em; /* NHA */
+    line-height: 2em; /* NHA */
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    padding: 0;
+    color: white;
+    background-color: cadetblue;  /*seagreen;*/
   }
   
   iframe {
@@ -176,8 +194,7 @@ iframe {
   }
   
   footer {
-    font-size: 0.75em;  /* at 12px */
-    text-align: center;
+    clear: right;
   }
 } 
 
@@ -196,13 +213,14 @@ iframe {
   }  
   
   #submit {
+    width: 60%;
     font-size: 1.5em; /* NHA */
     line-height: 2em; /* NHA */
     margin-top: 1em;
     margin-bottom: 0.5em;
     padding: 0;
     color: white;
-    background-color: blue; /* NHA */
+    background-color: royalblue;
   }
   
   #footer {
