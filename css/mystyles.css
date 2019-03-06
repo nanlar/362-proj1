@@ -174,20 +174,28 @@ iframe {
 /* for desktops and wide screens */
 @media screen and (min-width: 992px) {
   #content {
-    width: 960px;
-    margin: 0 auto;
+    float: left;
+    width: 60%;
+    margin: 20px 20px 20px 20px;
   }
   
-  #wrap-inputs {
-    width: 500px;
-    float: right;
-  }
+  #addinfo {
+    float: left;
+    width: 40%;
+    margin: 20px 0 20px 0;
+  }  
   
   #submit {
+    font-size: 1.5em; /* NHA */
+    line-height: 2em; /* NHA */
     margin: auto;
     padding: 0;
     color: white;
-    background-color: blue; 
+    background-color: blue; /* NHA */
+  }
+  
+  #footer {
+    clear: left;
   }
 }
   
