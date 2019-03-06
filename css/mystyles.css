@@ -92,7 +92,7 @@ label[for=age-verification] {
 #age-verification {
   border-style: none;
   width: auto;
-  margin: 0.25em 0;  / 4px, (4px/16px=0.25em) */
+  margin: 0.25em 0;  /* 4px, (4px/16px=0.25em) */
   width: 1em;  /* 16px, (16px/16px=1em) */
   height: 1em;  /* 16px, (16px/16px=1em) */
 }
