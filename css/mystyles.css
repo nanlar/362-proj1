@@ -174,14 +174,13 @@ iframe {
   }
    
   #content {
-    float: right;
-    width: 60%;
+    float: left;
+    width: 50%;
     margin-right: 20px;
   }
   
   #addinfo {
     width: 30%;
-    margin-right: 20px;
   }  
    
   #input-submit {
@@ -224,7 +223,7 @@ iframe {
   
   #addinfo {
     float: left;
-    width: 40%;
+    width: 35%;
     margin: 0 0 0 0;  /* top right bottom left */
   }  
   
