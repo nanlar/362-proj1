@@ -173,6 +173,11 @@ iframe {
 
 /* for desktops and wide screens */
 @media screen and (min-width: 992px) {
+  #content {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
   #wrap-inputs {
     width: 500px;
     float: right;
