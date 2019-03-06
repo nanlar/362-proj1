@@ -37,7 +37,7 @@ h2 {
   font-size: 1em;  /* 16px, (16px/16px=1em) */
   line-height: 1.25em;  /* ~120% at ~20px, (20px/16px=1.125em) */
   font-weight: 700;  /* for bold */
-  margin: 1em 0 0.1em 0;  /* 16px, (16px/16px=15em) */
+  margin: 0.5em 0 0.5em 0;  /*now 16px, (16px/16px=15em) */
 }
 
 h3 {
@@ -64,16 +64,19 @@ label {
   font-Size: 0.75em;  /* at 12px (12px/16px=0.75em) */
 }
 
-#wrap-inputs {
+#myform {
   background-color: lightblue; 
-  padding: 8px 8px 8px 8px;  /* top right bottom left*/
+  padding: 10px 10px 10px 10px;  /* top right bottom left*/
+  /* margin: 8px 0 8px 0  now */
 }
 
 input {
   width: 100%; /* mobile friendly */
   border-style: none;
-  padding: 4px 0 4px 4px;  /* top right bottom left */
-  margin: 8px 0 12px 0;
+  padding: 10px 0 10px 0px;  /* now top right bottom left */
+  margin-top: 8px;
+  margin-bottom: 15px;
+  display: inline-block;
 } 
 
 #em-disclaimer {
