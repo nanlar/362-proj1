@@ -5,7 +5,7 @@
    I assumed browser defult font size of 16px.
 */
 
-/* ===== BASE STYLES ===== */
+/* ===== BASE STYLES ==================== */
 
 html {
   font-size: 1em;  /* 16px, (16px/16px=1em) */
@@ -25,7 +25,7 @@ img, audio, video {
   max-width: 100%;
 }
 
-/* ===== LAYOUT STYLES ====== */
+/* ===== LAYOUT STYLES ================== */
 
 h1 {
   font-size: 1.5em;  /* 24px, (24px/16px=1.5em) */
@@ -122,9 +122,9 @@ footer {
   font-size: 0.75em;  /* at 12px */
 }
 
-/* ===== MODULAR STYLES ===== */
+/* ===== MODULAR STYLES ================= */
 
-/* My two media queries are listed below */
+/* My MEDIA queries are listed below */
 
 /* for small devices and above*/
 @media screen and (min-width: 480px) {  
@@ -138,7 +138,7 @@ footer {
   }
   
   input {
-    width: 60%;
+    width: 100%;
   }
   
   label[for=age-verification] {
@@ -152,8 +152,8 @@ footer {
     display: block;
     margin: auto;
     padding: 0;
-    font-size: 1.2em;
-    background-color: green;
+    font-size: 1.5em;
+    background-color: gray;
   }
   
   iframe {
@@ -161,7 +161,27 @@ footer {
     width: 300px;
     height: 200px;
   }
+  
+  footer {
+    font-size: 0.75em;  /* at 12px */
+    text-align: center;
+  }
 } 
+
+/* for tablets */
+@media screen and (min-width: 768px) {
+  #wrap-inputs {
+    width: 400px;
+    float: right;
+  }
+  
+  #submit {
+    margin: auto;
+    padding: 0;
+    color: white;
+    background-color: green; 
+  }
+}
 
 /* for desktops and wide screens */
 @media screen and (min-width: 992px) {
@@ -177,12 +197,10 @@ footer {
     background-color: blue; 
   }
 }
-
-
   
-/* ===== STATE STYLES ======= */
-/* === for javascript === */
+/* ===== STATE STYLES =================== */
 
+/* === for javascript === */
 /* not sure what to add here yet */
  
 
