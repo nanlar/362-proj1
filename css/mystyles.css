@@ -69,17 +69,16 @@ label {
 
 #myform {
   background-color: lightblue; 
-  padding: 1px 10px 4px 10px;  /* top right bottom left*/
-  /* margin: 8px 0 8px 0  now */
+  padding: 1px 10px 4px 6px;  /* top right bottom left*/
+  margin-top: 4px;
 }
 
 input {
-  width: 100%; /* mobile friendly */
+  width: 100%;  /* mobile friendly */
   border-style: none;
-  padding: 8px 0 8px 2px;  /* top right bottom left */
+  padding: 8px 0 8px 4px;  /* top right bottom left */
   margin-top: 8px;
   margin-bottom: 12px;
-  display: inline-block;
 } 
 
 #em-disclaimer {
@@ -142,21 +141,21 @@ iframe {
 
 /* My MEDIA queries are listed below */
 
-/* for tablets */
+/* for tablets ====== */
 @media screen and (min-width: 768px) { 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.5em;  /* 24px, (24px/16px=1.5em) */
     text-align: center;
   }
   
   h2 {
-    font-size: 1.25em;
+    font-size: 1.25em;  /* 20px, (20px/16px=1.25em) */
     text-align: center;
   }
   
   h3 {
     text-align: center;
-    margin-top: 1em;
+    margin-top: 1em;  /* at 16px */
   }
   
   label {
@@ -170,13 +169,14 @@ iframe {
   #content {
     float: left;
     width: 60%;
-    height: 400px; /* now */
-    margin-right: 20px;
+    height: 400px;
+    margin-left: 30px;
+    margin-right: 8px;
   }
   
   #addinfo {
     float: left;
-    width: 30%;
+    width: 35%;
   }  
    
   #input-submit {
@@ -185,13 +185,13 @@ iframe {
   
   #submit {
     width: 50%;
-    font-size: 1.25em; /* NHA */
-    line-height: 2em; /* NHA */
+    font-size: 1.25em;  /* 20px, (20px/16px=1.25em) */
+    line-height: 2em;  /* 32px, (32px/16px=2em) */
     margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5em;  /* 8px */
     padding: 0;
     color: white;
-    background-color: cadetblue;  /*seagreen;*/
+    background-color: cadetblue;  /* change to its own color */
   }
   
   iframe {
@@ -205,32 +205,29 @@ iframe {
   }
 } 
 
-/* for desktops and wide screens */
+/* for desktops and wide screens ====== */
 @media screen and (min-width: 992px) {
   h2 {
     text-align: left;
   }
   
+  #submit {
+    width: 60%;  /* make it wider */
+    margin-top: 1em;
+    margin-bottom: 0.5em;  /* 8px */
+    padding: 0;
+    color: white;
+    background-color: royalblue;  /* change to its own color */
+  }
+  
   #content {
-    float: left;
-    width: 60%;
-    margin: 0 20px;  /* top-bottom, right-left */
+    width: 70%;
   }
   
   #addinfo {
-    float: left;
-    width: 35%;
-    margin: 0 0 0 0;  /* top right bottom left */
+    width: 30%;
+    margin-right: 5px;
   }  
-  
-  #submit {
-    width: 60%;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    padding: 0;
-    color: white;
-    background-color: royalblue;
-  }
   
   #footer {
     clear: left;
