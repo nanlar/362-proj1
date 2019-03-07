@@ -8,7 +8,7 @@ jQuery(function($) {
 function checksubmit(){
   if (checkmail())
   {
-    alert('Congratulations, you are now signed up for our newsletter!');
+    alert('Congratulations, you are now signed up to our email list!');
   }
   else {
     // when email check fails, I don't know how to get back to email input again
