@@ -51,7 +51,7 @@ p {
   font-family: "Times New Roman";
   font-size: 1em;  /* 16px, (16px/16px=1em) */
   line-height: 1.2em;  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0.2em 0 0.2em 0;  /* at ~4px */
+  padding: 0 0 0.2em 0;  /* at ~4px */
 }
 
 #gift {
@@ -69,14 +69,14 @@ label {
 
 #myform {
   background-color: lightblue; 
-  padding: 8px 8px 8px 8px;  /* top right bottom left*/
+  padding: 4px 8px 4px 8px;  /* top right bottom left*/
   /* margin: 8px 0 8px 0  now */
 }
 
 input {
   width: 100%; /* mobile friendly */
   border-style: none;
-  padding: 10px 0 10px 0px;  /* now top right bottom left */
+  padding: 8px 0 8px 0px;  /* top right bottom left */
   margin-top: 8px;
   margin-bottom: 16px;
   display: inline-block;
@@ -125,6 +125,8 @@ img.center {
 iframe {
   position: relative;
   border: 1px solid black;
+  width: 200px;
+  height: 168px;
 }
 
 #footer {
@@ -167,7 +169,8 @@ iframe {
    
   #content {
     float: left;
-    width: 50%;
+    width: 60%;
+    height: 400px; /* now */
     margin-right: 20px;
   }
   
@@ -193,8 +196,8 @@ iframe {
   
   iframe {
     border: 1px solid black;
-    width: 300px;
-    height: 200px;
+    /* width: 150px; */
+    /* height: 100px; */
   }
   
   footer {
