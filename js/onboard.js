@@ -6,7 +6,7 @@ jQuery(function($) {
 
 // my functions
 function checksubmit(){
-  if (checkmail())
+  if (checkemail())
   {
     alert('Congratulations, you are now signed up to our email list!');
   }
@@ -18,7 +18,7 @@ function checksubmit(){
 document.getElementById("myform").addEventListener('submit', checksubmit);
 
 // check the email address against a regular expression
-function checkmail() {
+function checkemail() {
   var emailbutton = document.getElementById("email");
   var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if(emailbutton.value.match(emailformat))
@@ -28,7 +28,7 @@ function checkmail() {
   else
   {
     // if your entry is not in the emailformat defined above"
-    alert("Email validation failed.\nPlease enter a valid e-mail address.");
+    alert("Email validation failed.\nPlease enter a valid email address.");
     return false;
   }
 }
