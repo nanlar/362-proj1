@@ -88,11 +88,8 @@ input {
   font-style: oblique;
 }
 
-label[for=age-verification] {
-  font-size: 0.75em;
-  border-style: none;
-  float: left;
-  margin: 0.25em 0.5em 0 0; /* 4px, 8px */
+input:focus, mail:focus{
+  background-color: lightyellow;
 }
 
 #submit {
@@ -237,6 +234,5 @@ iframe {
 /* ===== STATE STYLES =================== */
 
 /* not sure what to add here yet */
- 
 
 /* ====== end of mystyles.css ======= */

@@ -10,10 +10,12 @@ function checksubmit(){
   {
     alert('Congratulations, you are now signed up for our newsletter!');
   }
+  else {
+    // when email check fails, I don't know how to get back to email input again
+  }
 };
 
 document.getElementById("myform").addEventListener('submit', checksubmit);
-
 
 // check the email address against a regular expression
 function checkmail() {
@@ -26,9 +28,7 @@ function checkmail() {
   else
   {
     // if your entry is not in the emailformat defined above"
-    alert("Please enter a valid e-mail address");
-    // NHA - form clears once pressed ok
-    //document.myform.email.focus();
+    alert("Email validation failed.\nPlease enter a valid e-mail address.");
     return false;
   }
 }
