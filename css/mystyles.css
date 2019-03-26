@@ -194,7 +194,7 @@ iframe {
     position: relative;
     border: 1px solid black;
     width: 200px;
-    height: 150px;
+    height: 170px;
   }
    
   footer {
@@ -225,6 +225,13 @@ iframe {
     width: 30%;
     margin-right: 5px;
   }  
+  
+  iframe {
+    position: relative;
+    border: 1px solid black;
+    width: 200px;
+    height: 150px;
+  }
   
   #footer {
     clear: left;
