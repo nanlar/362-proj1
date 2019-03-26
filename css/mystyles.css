@@ -48,7 +48,7 @@ h3 {
 }
 
 p {
-  font-family: "Times New Roman";
+  font-family: "Times New Roman", Georgia, Serif;
   font-size: 1em;  /* 16px, (16px/16px=1em) */
   line-height: 1.2em;  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
   padding: 0 0 0.25em 0;  /* ~4px, (4px/16px=0.25em) */
@@ -121,8 +121,7 @@ img.center {
 iframe {
   position: relative;
   border: 1px solid black;
-  width: 200px;
-  height: 168px;
+  width: 95%;  /* Prof K. input, for better user experience */
 }
 
 #footer {
